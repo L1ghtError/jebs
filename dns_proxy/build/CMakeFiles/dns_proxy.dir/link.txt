@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o" CMakeFiles/dns_proxy.dir/src/main.c.o -o dns_proxy 

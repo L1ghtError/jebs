@@ -1,0 +1,4 @@
+/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/dns_proxy.dir
+/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/test_dump.dir
+/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/edit_cache.dir
+/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/rebuild_cache.dir

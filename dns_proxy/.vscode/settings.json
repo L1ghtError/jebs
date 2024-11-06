@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "netdb.h": "c",
+        "inet.h": "c",
+        "dns-protocol.h": "c",
+        "stddef.h": "c",
+        "typeinfo": "c"
+    }
+}
