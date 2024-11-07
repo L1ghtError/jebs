@@ -43,13 +43,13 @@ new_dns_h (const uint8_t *req, dns_rc_t *rc)
       dns_rc_t trc;
       lrc = &trc;
    }
-   lrc = kOk;
+   *lrc = kOk;
 
    if (req == NULL) {
       *lrc = kInvalidInput;
       return NULL;
    }
-   dns_header_t *hdr_ptr = req;
+   dns_header_t *hdr_ptr = (dns_header_t *) req;
    dns_h_t *dns = (dns_h_t *) malloc (sizeof (*dns));
    dns->header.id = ntohs (hdr_ptr->id);
    dns->header.hb3 = hdr_ptr->hb3;

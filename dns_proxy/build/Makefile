@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles /home/lighterror/Documents/InangoTasks/dns_proxy/build//CMakeFiles/progress.marks
@@ -142,6 +187,69 @@ test_dump/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dump.dir/build.make CMakeFiles/test_dump.dir/build
 .PHONY : test_dump/fast
 
+#=============================================================================
+# Target rules for targets named cjson
+
+# Build rule for target.
+cjson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cjson
+.PHONY : cjson
+
+# fast build rule for target.
+cjson/fast:
+	$(MAKE) $(MAKESILENT) -f dependencies/cJSON/CMakeFiles/cjson.dir/build.make dependencies/cJSON/CMakeFiles/cjson.dir/build
+.PHONY : cjson/fast
+
+#=============================================================================
+# Target rules for targets named cjson_utils
+
+# Build rule for target.
+cjson_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cjson_utils
+.PHONY : cjson_utils
+
+# fast build rule for target.
+cjson_utils/fast:
+	$(MAKE) $(MAKESILENT) -f dependencies/cJSON/CMakeFiles/cjson_utils.dir/build.make dependencies/cJSON/CMakeFiles/cjson_utils.dir/build
+.PHONY : cjson_utils/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f dependencies/cJSON/CMakeFiles/uninstall.dir/build.make dependencies/cJSON/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+src/configuration/configuration.o: src/configuration/configuration.c.o
+.PHONY : src/configuration/configuration.o
+
+# target to build an object file
+src/configuration/configuration.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o
+.PHONY : src/configuration/configuration.c.o
+
+src/configuration/configuration.i: src/configuration/configuration.c.i
+.PHONY : src/configuration/configuration.i
+
+# target to preprocess a source file
+src/configuration/configuration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.i
+.PHONY : src/configuration/configuration.c.i
+
+src/configuration/configuration.s: src/configuration/configuration.c.s
+.PHONY : src/configuration/configuration.s
+
+# target to generate assembly for a file
+src/configuration/configuration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.s
+.PHONY : src/configuration/configuration.c.s
+
 src/dns/dns-parse.o: src/dns/dns-parse.c.o
 .PHONY : src/dns/dns-parse.o
 
@@ -190,6 +298,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/server/dns_server.o: src/server/dns_server.c.o
+.PHONY : src/server/dns_server.o
+
+# target to build an object file
+src/server/dns_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o
+.PHONY : src/server/dns_server.c.o
+
+src/server/dns_server.i: src/server/dns_server.c.i
+.PHONY : src/server/dns_server.i
+
+# target to preprocess a source file
+src/server/dns_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/server/dns_server.c.i
+.PHONY : src/server/dns_server.c.i
+
+src/server/dns_server.s: src/server/dns_server.c.s
+.PHONY : src/server/dns_server.s
+
+# target to generate assembly for a file
+src/server/dns_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns_proxy.dir/build.make CMakeFiles/dns_proxy.dir/src/server/dns_server.c.s
+.PHONY : src/server/dns_server.c.s
+
 test/dump.o: test/dump.c.o
 .PHONY : test/dump.o
 
@@ -221,15 +353,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... uninstall"
+	@echo "... cjson"
+	@echo "... cjson_utils"
 	@echo "... dns_proxy"
 	@echo "... test_dump"
+	@echo "... src/configuration/configuration.o"
+	@echo "... src/configuration/configuration.i"
+	@echo "... src/configuration/configuration.s"
 	@echo "... src/dns/dns-parse.o"
 	@echo "... src/dns/dns-parse.i"
 	@echo "... src/dns/dns-parse.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/server/dns_server.o"
+	@echo "... src/server/dns_server.i"
+	@echo "... src/server/dns_server.s"
 	@echo "... test/dump.o"
 	@echo "... test/dump.i"
 	@echo "... test/dump.s"

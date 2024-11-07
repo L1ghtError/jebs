@@ -5,6 +5,18 @@
         "inet.h": "c",
         "dns-protocol.h": "c",
         "stddef.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "configuration.h": "c",
+        "stdio.h": "c",
+        "status.h": "c",
+        "cjson.h": "c",
+        "file_tools.h": "c",
+        "nameser_compat.h": "c",
+        "cstddef": "cpp",
+        "server.h": "c",
+        "string.h": "c",
+        "dns_server.h": "c",
+        "network_tools.h": "c",
+        "socket.h": "c"
     }
 }

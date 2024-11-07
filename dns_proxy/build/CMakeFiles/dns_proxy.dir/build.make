@@ -69,10 +69,24 @@ include CMakeFiles/dns_proxy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/dns_proxy.dir/flags.make
 
+CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o: CMakeFiles/dns_proxy.dir/flags.make
+CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o: /home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c
+CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o: CMakeFiles/dns_proxy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o -MF CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o.d -o CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c
+
+CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c > CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.i
+
+CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c -o CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.s
+
 CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o: CMakeFiles/dns_proxy.dir/flags.make
 CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o: /home/lighterror/Documents/InangoTasks/dns_proxy/src/dns/dns-parse.c
 CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o: CMakeFiles/dns_proxy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o -MF CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o.d -o CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/dns/dns-parse.c
 
 CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.s: cmake_force
 CMakeFiles/dns_proxy.dir/src/main.c.o: CMakeFiles/dns_proxy.dir/flags.make
 CMakeFiles/dns_proxy.dir/src/main.c.o: /home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c
 CMakeFiles/dns_proxy.dir/src/main.c.o: CMakeFiles/dns_proxy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dns_proxy.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dns_proxy.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dns_proxy.dir/src/main.c.o -MF CMakeFiles/dns_proxy.dir/src/main.c.o.d -o CMakeFiles/dns_proxy.dir/src/main.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c
 
 CMakeFiles/dns_proxy.dir/src/main.c.i: cmake_force
@@ -97,19 +111,40 @@ CMakeFiles/dns_proxy.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dns_proxy.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c -o CMakeFiles/dns_proxy.dir/src/main.c.s
 
+CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o: CMakeFiles/dns_proxy.dir/flags.make
+CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o: /home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c
+CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o: CMakeFiles/dns_proxy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o -MF CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o.d -o CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c
+
+CMakeFiles/dns_proxy.dir/src/server/dns_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dns_proxy.dir/src/server/dns_server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c > CMakeFiles/dns_proxy.dir/src/server/dns_server.c.i
+
+CMakeFiles/dns_proxy.dir/src/server/dns_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dns_proxy.dir/src/server/dns_server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c -o CMakeFiles/dns_proxy.dir/src/server/dns_server.c.s
+
 # Object files for target dns_proxy
 dns_proxy_OBJECTS = \
+"CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o" \
 "CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o" \
-"CMakeFiles/dns_proxy.dir/src/main.c.o"
+"CMakeFiles/dns_proxy.dir/src/main.c.o" \
+"CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o"
 
 # External object files for target dns_proxy
 dns_proxy_EXTERNAL_OBJECTS =
 
+dns_proxy: CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o
 dns_proxy: CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o
 dns_proxy: CMakeFiles/dns_proxy.dir/src/main.c.o
+dns_proxy: CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o
 dns_proxy: CMakeFiles/dns_proxy.dir/build.make
+dns_proxy: dependencies/cJSON/libcjson.a
+dns_proxy: dependencies/cJSON/libcjson_utils.a
+dns_proxy: dependencies/cJSON/libcjson.a
 dns_proxy: CMakeFiles/dns_proxy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable dns_proxy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable dns_proxy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dns_proxy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

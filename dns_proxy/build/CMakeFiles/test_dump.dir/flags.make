@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/lighterror/Documents/InangoTasks/dns_proxy/include
+C_INCLUDES = -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include
 
 C_FLAGS = -g
 

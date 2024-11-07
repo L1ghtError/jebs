@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o"
+  "CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o.d"
   "CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o"
   "CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o.d"
   "CMakeFiles/dns_proxy.dir/src/main.c.o"
   "CMakeFiles/dns_proxy.dir/src/main.c.o.d"
+  "CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o"
+  "CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o.d"
   "dns_proxy"
   "dns_proxy.pdb"
 )

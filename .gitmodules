@@ -1,0 +1,3 @@
+[submodule "dns_proxy/dependencies/cJSON"]
+	path = dns_proxy/dependencies/cJSON
+	url = https://github.com/DaveGamble/cJSON.git
