@@ -20,10 +20,12 @@ struct dns_server {
    struct addrinfo u_hints;
    char s_host[INET6_ADDRSTRLEN];
    char u_host[INET6_ADDRSTRLEN];
+   const dns_conf_t *conf;
    DNS_SOCK self_sockfd;
    DNS_SOCK upstream_sockfd;
    uint16_t s_port;
    uint16_t u_port;
+   uint8_t quit;
 };
 typedef struct dns_server dns_server_t;
 

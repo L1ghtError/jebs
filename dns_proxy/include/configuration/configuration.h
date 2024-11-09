@@ -12,7 +12,7 @@ typedef enum dns_filter_type dns_filter_type_t;
 enum dns_match_type { DNS_MT_CONTAINS = 0, DNS_MT_EXACT = 1 };
 typedef enum dns_match_type dns_match_type_t;
 
-enum dns_action_type { DNS_AT_NOTFOUND = 0, DNS_AT_REFUSE = 1, DNS_AT_REDIRECT = 2 };
+enum dns_action_type { DNS_AT_NOTFOUND = 0, DNS_AT_REFUSE = 1, DNS_AT_REDIRECT = 2, DNS_AT_HANDLE = 2 };
 typedef enum dns_action_type dns_action_type_t;
 
 struct dns_filter_conf {

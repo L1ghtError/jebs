@@ -17,6 +17,11 @@
         "string.h": "c",
         "dns_server.h": "c",
         "network_tools.h": "c",
-        "socket.h": "c"
+        "socket.h": "c",
+        "stdint.h": "c",
+        "errno.h": "c",
+        "dns-parse.h": "c",
+        "string_view": "c",
+        "in.h": "c"
     }
 }

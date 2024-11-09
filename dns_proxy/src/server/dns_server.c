@@ -1,5 +1,7 @@
 #include "server/dns_server.h"
 #include "dns/dns-parse.h"
+#include "utils/string_tools.h"
+#include "utils/network_tools.h"
 #include "stdlib.h"
 #include "string.h"
 #include <errno.h>
@@ -10,32 +12,39 @@ init_dns_addrinfo (struct addrinfo *ainfo, const char *host, uint16_t port, stru
    memset (storage, 0, sizeof (*storage)); // Ensure zero-initialization
    memset (ainfo, 0, sizeof (*ainfo));     // Ensure zero-initialization
 
+   // Clear the storage and handle AF_INET (IPv4)
    struct sockaddr_in *sa = (struct sockaddr_in *) storage;
-   struct sockaddr_in6 *sa6 = (struct sockaddr_in6 *) storage;
-   sa->sin_port = port;
+   sa->sin_port = htons (port);
    ainfo->ai_family = AF_INET;
    ainfo->ai_socktype = SOCK_DGRAM;
    ainfo->ai_protocol = IPPROTO_UDP;
    ainfo->ai_addr = (struct sockaddr *) sa;
+   sa->sin_family = ainfo->ai_family;
+   sa->sin_addr.s_addr = INADDR_ANY;
    ainfo->ai_addrlen = sizeof (*sa);
 
-   sa->sin_family = AF_INET;
+   // Try to parse as IPv4
    if (inet_pton (AF_INET, host, &sa->sin_addr) == 1) {
-      return kOk;
+      return kOk; // Successfully parsed IPv4
    }
-   sa6->sin6_port = port;
+
+   // Clear the storage and handle AF_INET6 (IPv6)
+   struct sockaddr_in6 *sa6 = (struct sockaddr_in6 *) storage;
+   sa6->sin6_port = htons (port);
    ainfo->ai_family = AF_INET6;
    ainfo->ai_protocol = IPPROTO_UDP;
    ainfo->ai_addr = (struct sockaddr *) sa6;
    ainfo->ai_addrlen = sizeof (*sa6);
 
+   // Try to parse as IPv6
    sa6->sin6_family = AF_INET6;
    if (inet_pton (AF_INET6, host, &sa6->sin6_addr) == 1) {
-      return kOk;
+      return kOk; // Successfully parsed IPv6
    }
 
-   return kDataMalformed;
+   return kDataMalformed; // Neither IPv4 nor IPv6 address could be parsed
 }
+
 
 DNS_SOCK
 bind_dns_socket (const struct addrinfo *ainfo, struct sockaddr_storage *storage)
@@ -50,31 +59,12 @@ bind_dns_socket (const struct addrinfo *ainfo, struct sockaddr_storage *storage)
       close (sockfd);
       return -1;
    }
-
-   if (bind (sockfd, ainfo->ai_addr, ainfo->ai_addrlen) == -1) {
+   struct sockaddr_in *sa = (struct sockaddr_in *) ainfo->ai_addr;
+   if (bind (sockfd, ainfo->ai_addr, ainfo->ai_addrlen) < 0) {
       close (sockfd);
       return -1;
    }
    return sockfd;
-}
-
-DNS_SOCK
-connect_dns_socket (const struct addrinfo *ainfo, struct sockaddr_storage *storage)
-{
-   DNS_SOCK sockfd = -1;
-   if ((sockfd = socket (ainfo->ai_family, ainfo->ai_socktype, ainfo->ai_protocol)) == -1) {
-      close (sockfd);
-      return -1;
-   }
-   int so_reuseaddr = 1;
-   if (setsockopt (sockfd, SOL_SOCKET, SO_REUSEADDR, &so_reuseaddr, sizeof (int)) == -1) {
-      close (sockfd);
-      return -1;
-   }
-   if (connect (sockfd, ainfo->ai_addr, ainfo->ai_addrlen) == -1) {
-      close (sockfd);
-      return -1;
-   }
 }
 
 dns_server_t *
@@ -104,7 +94,7 @@ init_dns_server (const dns_conf_t *conf, dns_rc_t *rc)
    addrlen = strlen (conf->upstream.addr);
    strncpy (server->u_host, conf->upstream.addr, addrlen);
    server->u_port = conf->upstream.port;
-
+   server->conf = conf;
 
    *lrc = init_dns_addrinfo (&server->s_hints, server->s_host, server->s_port, &server->s_storage);
    if (*lrc != kOk) {
@@ -123,42 +113,211 @@ init_dns_server (const dns_conf_t *conf, dns_rc_t *rc)
       destroy_dns_server (server);
       return NULL;
    }
-   server->upstream_sockfd = connect_dns_socket (&server->u_hints, &server->u_storage);
-   if (server->upstream_sockfd == -1) {
+   if ((server->upstream_sockfd =
+           socket (server->u_hints.ai_family, server->u_hints.ai_socktype, server->u_hints.ai_protocol)) == -1) {
       *lrc = kAborted;
       destroy_dns_server (server);
       return NULL;
    }
+   server->quit = 0;
    return server;
 }
 
-void
-destroy_dns_server (dns_server_t *server)
+const dns_filter_conf_t *
+find_filter (const dns_filter_conf_t *filters, int fsize, const dns_h_t *dht, uint16_t *out_q)
 {
-   free (server);
-   close (server->self_sockfd);
-   close (server->upstream_sockfd);
+   if (filters == NULL || fsize == 0 || dht == NULL) {
+      return NULL;
+   }
+
+   for (int i = 0; i < dht->header.qdcount; i++) {
+      for (int j = 0; j < fsize; j++) {
+         if ((filters[j].match_type == DNS_MT_EXACT && (str_i_cmp (dht->qrs[i].name, filters[j].host) == 0)) ||
+             ((filters[j].match_type == DNS_MT_CONTAINS) && (str_i_str (dht->qrs[i].name, filters[j].host) != NULL))) {
+            if (out_q != NULL) {
+               *out_q = i;
+            }
+            return &filters[j];
+         }
+      }
+   }
+   return NULL;
 }
+
+dns_h_t *
+new_dns_h_refuse (const dns_h_t *dht)
+{
+   if (dht == NULL) {
+      return NULL;
+   }
+   dns_h_t *dht_resp = new_dns_h (NULL, NULL);
+   if (dht_resp == NULL) {
+      return dht_resp;
+   }
+   dht_resp->header = dht->header;
+
+   if (dht_resp->header.qdcount > 0) {
+      dht_resp->qrs = (dns_qrr_t *) malloc (dht_resp->header.qdcount * sizeof (*dht_resp->qrs));
+      for (int i = 0; i < dht_resp->header.qdcount; i++) {
+         size_t len = strlen (dht->qrs[i].name);
+         strncpy (dht_resp->qrs[i].name, dht->qrs[i].name, len);
+         dht_resp->qrs[i].type = dht->qrs[i].type;
+         dht_resp->qrs[i].class = dht->qrs[i].class;
+      }
+   }
+   SET_RCODE (&dht_resp->header, RCODE_REFUSED);
+   return dht_resp;
+}
+
+dns_h_t *
+new_dns_h_notfound (const dns_h_t *dht)
+{
+   if (dht == NULL) {
+      return NULL;
+   }
+   dns_h_t *dht_resp = new_dns_h (NULL, NULL);
+   if (dht_resp == NULL) {
+      return dht_resp;
+   }
+   dht_resp->header = dht->header;
+
+   if (dht_resp->header.qdcount > 0) {
+      dht_resp->qrs = (dns_qrr_t *) malloc (dht_resp->header.qdcount * sizeof (*dht_resp->qrs));
+      for (int i = 0; i < dht_resp->header.qdcount; i++) {
+         size_t len = strlen (dht->qrs[i].name);
+         strncpy (dht_resp->qrs[i].name, dht->qrs[i].name, len);
+         dht_resp->qrs[i].type = dht->qrs[i].type;
+         dht_resp->qrs[i].class = dht->qrs[i].class;
+      }
+   }
+   SET_RCODE (&dht_resp->header, RCODE_NXDOMAIN);
+   return dht_resp;
+}
+
+dns_h_t *
+new_dns_h_redirect (const dns_h_t *dht, uint16_t qindex, const uint8_t *redirect_addr)
+{
+   if (dht == NULL || redirect_addr == NULL) {
+      return NULL;
+   }
+   dns_h_t *dht_resp = new_dns_h (NULL, NULL);
+   if (dht_resp == NULL) {
+      return dht_resp;
+   }
+   dht_resp->header = dht->header;
+   size_t *qlengths = 0;
+   if (dht_resp->header.qdcount < 0 || dht_resp->header.qdcount < qindex) {
+      return NULL;
+   }
+
+   dht_resp->qrs = (dns_qrr_t *) malloc (dht_resp->header.qdcount * sizeof (*dht_resp->qrs));
+   qlengths = (size_t *) calloc (dht_resp->header.qdcount, sizeof (*qlengths));
+
+   for (int i = 0; i < dht_resp->header.qdcount; i++) {
+      size_t len = strlen (dht->qrs[i].name);
+      strncpy (dht_resp->qrs[i].name, dht->qrs[i].name, len);
+      dht_resp->qrs[i].type = dht->qrs[i].type;
+      dht_resp->qrs[i].class = dht->qrs[i].class;
+
+      qlengths[i] += (sizeof (*dht_resp->qrs) - sizeof (dht_resp->qrs->name) + len);
+   }
+   dht_resp->header.ancount = 1;
+   dht_resp->ancs = (dns_arr_t *) malloc (sizeof (*dht_resp->ancs));
+   dht_resp->ancs->name[0] = POINTER_MASK;
+   uint8_t ptr_offset = sizeof (dht->header);
+   for (int i = 0; i < (dht_resp->header.qdcount - 1); ++i) {
+      ptr_offset += qlengths[i];
+   }
+   dht_resp->ancs->name[1] = ptr_offset;
+   uint8_t bin_addr[16] = {0};
+   int addr_size = 0;
+   if (get_address_ip_binary (redirect_addr, bin_addr, &addr_size) == -1) {
+      return NULL;
+   }
+   if ((dht_resp->qrs[qindex].type == T_A && addr_size == 4) ||
+       (dht_resp->qrs[qindex].type == T_AAAA && addr_size == 16)) {
+      dht_resp->ancs->type = dht_resp->qrs[qindex].type;
+   } else {
+      return NULL;
+   }
+   dht_resp->ancs->class = C_IN;
+   dht_resp->ancs->ttl = DEFAULT_TTL;
+   dht_resp->ancs->rdlength = addr_size;
+   dht_resp->ancs->rdata = (uint8_t *) malloc (addr_size * sizeof (*dht_resp->ancs->rdata));
+   memcpy (dht_resp->ancs->rdata, bin_addr, addr_size);
+   return dht_resp;
+}
+
+
+dns_h_t *
+decide_dns_response (const dns_server_t *server, const dns_h_t *dht)
+{
+   if (server == NULL || dht == NULL) {
+      return NULL;
+   }
+   uint16_t q_index = 0;
+   const dns_filter_conf_t *filter = find_filter (server->conf->filters, server->conf->filter_size, dht, &q_index);
+   if (filter == NULL) {
+      return NULL;
+   }
+   dns_action_type_t action = DNS_AT_HANDLE;
+
+   if (filter->filter_type == DNS_FT_ALL) {
+      action = filter->action_type;
+   } else if (filter->filter_type == DNS_FT_IPV4 && dht->qrs->type == T_A) {
+      action = filter->action_type;
+   } else if (filter->filter_type == DNS_FT_IPV6 && dht->qrs->type == T_AAAA) {
+      action = filter->action_type;
+   }
+   if (action == DNS_AT_NOTFOUND) {
+      return new_dns_h_notfound (dht);
+   } else if (action == DNS_AT_REFUSE) {
+      return new_dns_h_refuse (dht);
+   } else if (action == DNS_AT_REDIRECT) {
+      return new_dns_h_redirect (dht, q_index, filter->redirect_addr);
+   }
+
+   return NULL;
+}
+
+
 #define BUFFER_SIZE 1024
 dns_rc_t
 run_dns_server (const dns_server_t *server)
 {
    char buffer[BUFFER_SIZE] = {0};
-   while (1) {
-      struct sockaddr_in client_addr;
+   struct sockaddr_in client_addr = {0};
+   while (server->quit == 0) {
       socklen_t c_len = sizeof (client_addr);
       socklen_t u_len = server->u_hints.ai_addrlen;
       ssize_t n;
 
       // Receive a message from a client
       n = recvfrom (server->self_sockfd, buffer, BUFFER_SIZE, 0, (struct sockaddr *) &client_addr, &c_len);
-      dns_h_t *dht = new_dns_h (buffer, NULL);
-      sendto (server->upstream_sockfd, buffer, n, 0, server->u_hints.ai_addr, server->u_hints.ai_addrlen);
-      memset (buffer, 0, BUFFER_SIZE);
+      dns_h_t *dha = new_dns_h (buffer, NULL);
 
-      n = recvfrom (server->upstream_sockfd, buffer, BUFFER_SIZE, 0, server->u_hints.ai_addr, &u_len);
-      sendto (server->self_sockfd, buffer, n, 0, (struct sockaddr *) &client_addr, &c_len);
-      memset (buffer, 0, BUFFER_SIZE);
+      dns_h_t *resp = decide_dns_response (server, dha);
+      // FILTERED ROUTE
+      if (resp != NULL) {
+         int buf_len = 0;
+         uint8_t *gen_buf = new_dns_buffer (resp, NULL, &buf_len);
+
+         sendto (server->self_sockfd, gen_buf, buf_len, 0, (struct sockaddr *) &client_addr, c_len);
+         memset (buffer, 0, BUFFER_SIZE);
+
+         destroy_dns_h (resp);
+         free (gen_buf);
+      } else {
+         // UNFILTERED ROUTE
+         sendto (server->upstream_sockfd, buffer, n, 0, server->u_hints.ai_addr, server->u_hints.ai_addrlen);
+         memset (buffer, 0, BUFFER_SIZE);
+
+         n = recvfrom (server->upstream_sockfd, buffer, BUFFER_SIZE, 0, server->u_hints.ai_addr, &u_len);
+
+         sendto (server->self_sockfd, buffer, n, 0, (struct sockaddr *) &client_addr, c_len);
+         memset (buffer, 0, BUFFER_SIZE);
+      }
+      destroy_dns_h (dha);
    }
    return kOk;
 }
@@ -245,4 +404,12 @@ validate_dns_conf (const dns_conf_t *conf, dns_rc_t *rc)
       }
    }
    return NULL;
+}
+
+void
+destroy_dns_server (dns_server_t *server)
+{
+   free (server);
+   close (server->self_sockfd);
+   close (server->upstream_sockfd);
 }

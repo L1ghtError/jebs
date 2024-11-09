@@ -1704,3 +1704,856 @@ gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/bu
 Source file was:
 int main(void) { return 0; }
 
+The system is: Linux - 6.1.0-26-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/3.25.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LDLKhv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50e70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50e70.dir/build.make CMakeFiles/cmTC_50e70.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LDLKhv'
+Building C object CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50e70.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccGdfTNn.s
+GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/12/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/'
+ as -v --64 -o CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o /tmp/ccGdfTNn.s
+GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_50e70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50e70.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -o cmTC_50e70 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_50e70' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_50e70.'
+ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMctXQV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_50e70 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_50e70' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_50e70.'
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LDLKhv'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LDLKhv]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50e70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50e70.dir/build.make CMakeFiles/cmTC_50e70.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LDLKhv']
+  ignore line: [Building C object CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50e70.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccGdfTNn.s]
+  ignore line: [GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o /tmp/ccGdfTNn.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_50e70]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50e70.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -o cmTC_50e70 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_50e70' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_50e70.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMctXQV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_50e70 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMctXQV.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_50e70] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
+    arg [CMakeFiles/cmTC_50e70.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Ywb64l
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71816/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71816.dir/build.make CMakeFiles/cmTC_71816.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Ywb64l'
+Building CXX object CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_71816.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccFrtwFJ.s
+GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/12
+ /usr/include/x86_64-linux-gnu/c++/12
+ /usr/include/c++/12/backward
+ /usr/lib/gcc/x86_64-linux-gnu/12/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/'
+ as -v --64 -o CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFrtwFJ.s
+GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_71816
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71816.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_71816 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71816' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_71816.'
+ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5LcXkN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_71816 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71816' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_71816.'
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Ywb64l'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/12]
+    add: [/usr/include/x86_64-linux-gnu/c++/12]
+    add: [/usr/include/c++/12/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/12] ==> [/usr/include/c++/12]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/12] ==> [/usr/include/x86_64-linux-gnu/c++/12]
+  collapse include dir [/usr/include/c++/12/backward] ==> [/usr/include/c++/12/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/12;/usr/include/x86_64-linux-gnu/c++/12;/usr/include/c++/12/backward;/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Ywb64l]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71816/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71816.dir/build.make CMakeFiles/cmTC_71816.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Ywb64l']
+  ignore line: [Building CXX object CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_71816.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccFrtwFJ.s]
+  ignore line: [GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/12]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/12]
+  ignore line: [ /usr/include/c++/12/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFrtwFJ.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_71816]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71816.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_71816 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71816' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_71816.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5LcXkN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_71816 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5LcXkN.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_71816] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
+    arg [CMakeFiles/cmTC_71816.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_stdc89 succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-5HMYOB
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6dc2f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6dc2f.dir/build.make CMakeFiles/cmTC_6dc2f.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-5HMYOB'
+Building C object CMakeFiles/cmTC_6dc2f.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_stdc89  -std=c89 -o CMakeFiles/cmTC_6dc2f.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-5HMYOB/src.c
+Linking C executable cmTC_6dc2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6dc2f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_6dc2f.dir/src.c.o -o cmTC_6dc2f 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-5HMYOB'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_pedantic succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-peD8lx
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_501d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_501d2.dir/build.make CMakeFiles/cmTC_501d2.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-peD8lx'
+Building C object CMakeFiles/cmTC_501d2.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_pedantic  -std=c89    -pedantic -o CMakeFiles/cmTC_501d2.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-peD8lx/src.c
+Linking C executable cmTC_501d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_501d2.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89  -rdynamic CMakeFiles/cmTC_501d2.dir/src.c.o -o cmTC_501d2 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-peD8lx'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wall succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-V2OVSO
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a2ff2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a2ff2.dir/build.make CMakeFiles/cmTC_a2ff2.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-V2OVSO'
+Building C object CMakeFiles/cmTC_a2ff2.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wall  -std=c89 -pedantic    -Wall -o CMakeFiles/cmTC_a2ff2.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-V2OVSO/src.c
+Linking C executable cmTC_a2ff2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2ff2.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic  -rdynamic CMakeFiles/cmTC_a2ff2.dir/src.c.o -o cmTC_a2ff2 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-V2OVSO'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wextra succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-N18Ofk
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d183d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d183d.dir/build.make CMakeFiles/cmTC_d183d.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-N18Ofk'
+Building C object CMakeFiles/cmTC_d183d.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wextra  -std=c89 -pedantic -Wall    -Wextra -o CMakeFiles/cmTC_d183d.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-N18Ofk/src.c
+Linking C executable cmTC_d183d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d183d.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall  -rdynamic CMakeFiles/cmTC_d183d.dir/src.c.o -o cmTC_d183d 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-N18Ofk'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Werror succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-dMhSiP
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2002/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c2002.dir/build.make CMakeFiles/cmTC_c2002.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-dMhSiP'
+Building C object CMakeFiles/cmTC_c2002.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Werror  -std=c89 -pedantic -Wall -Wextra    -Werror -o CMakeFiles/cmTC_c2002.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-dMhSiP/src.c
+Linking C executable cmTC_c2002
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2002.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra  -rdynamic CMakeFiles/cmTC_c2002.dir/src.c.o -o cmTC_c2002 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-dMhSiP'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wstrictprototypes succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WiGAdX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5cfc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5cfc.dir/build.make CMakeFiles/cmTC_e5cfc.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WiGAdX'
+Building C object CMakeFiles/cmTC_e5cfc.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wstrictprototypes  -std=c89 -pedantic -Wall -Wextra -Werror    -Wstrict-prototypes -o CMakeFiles/cmTC_e5cfc.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WiGAdX/src.c
+Linking C executable cmTC_e5cfc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5cfc.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror  -rdynamic CMakeFiles/cmTC_e5cfc.dir/src.c.o -o cmTC_e5cfc 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WiGAdX'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wwritestrings succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-fM7yao
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c8a54/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c8a54.dir/build.make CMakeFiles/cmTC_c8a54.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-fM7yao'
+Building C object CMakeFiles/cmTC_c8a54.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wwritestrings  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes    -Wwrite-strings -o CMakeFiles/cmTC_c8a54.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-fM7yao/src.c
+Linking C executable cmTC_c8a54
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8a54.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_c8a54.dir/src.c.o -o cmTC_c8a54 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-fM7yao'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wshadow succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-AUUyEZ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_29d96/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_29d96.dir/build.make CMakeFiles/cmTC_29d96.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-AUUyEZ'
+Building C object CMakeFiles/cmTC_29d96.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wshadow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings    -Wshadow -o CMakeFiles/cmTC_29d96.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-AUUyEZ/src.c
+Linking C executable cmTC_29d96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29d96.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings  -rdynamic CMakeFiles/cmTC_29d96.dir/src.c.o -o cmTC_29d96 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-AUUyEZ'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Winitself succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-62yKcR
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7acb9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7acb9.dir/build.make CMakeFiles/cmTC_7acb9.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-62yKcR'
+Building C object CMakeFiles/cmTC_7acb9.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Winitself  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow    -Winit-self -o CMakeFiles/cmTC_7acb9.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-62yKcR/src.c
+Linking C executable cmTC_7acb9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7acb9.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow  -rdynamic CMakeFiles/cmTC_7acb9.dir/src.c.o -o cmTC_7acb9 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-62yKcR'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcastalign succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-6DxN3f
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c7176/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c7176.dir/build.make CMakeFiles/cmTC_c7176.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-6DxN3f'
+Building C object CMakeFiles/cmTC_c7176.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wcastalign  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self    -Wcast-align -o CMakeFiles/cmTC_c7176.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-6DxN3f/src.c
+Linking C executable cmTC_c7176
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7176.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self  -rdynamic CMakeFiles/cmTC_c7176.dir/src.c.o -o cmTC_c7176 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-6DxN3f'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wformat2 succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-h4YCdD
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8f790/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f790.dir/build.make CMakeFiles/cmTC_8f790.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-h4YCdD'
+Building C object CMakeFiles/cmTC_8f790.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wformat2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align    -Wformat=2 -o CMakeFiles/cmTC_8f790.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-h4YCdD/src.c
+Linking C executable cmTC_8f790
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f790.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align  -rdynamic CMakeFiles/cmTC_8f790.dir/src.c.o -o cmTC_8f790 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-h4YCdD'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wmissingprototypes succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Xinpnt
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e938/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e938.dir/build.make CMakeFiles/cmTC_2e938.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Xinpnt'
+Building C object CMakeFiles/cmTC_2e938.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wmissingprototypes  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2    -Wmissing-prototypes -o CMakeFiles/cmTC_2e938.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Xinpnt/src.c
+Linking C executable cmTC_2e938
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e938.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2  -rdynamic CMakeFiles/cmTC_2e938.dir/src.c.o -o cmTC_2e938 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-Xinpnt'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wstrictoverflow2 succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-gDRU8w
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6923b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6923b.dir/build.make CMakeFiles/cmTC_6923b.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-gDRU8w'
+Building C object CMakeFiles/cmTC_6923b.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wstrictoverflow2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes    -Wstrict-overflow=2 -o CMakeFiles/cmTC_6923b.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-gDRU8w/src.c
+Linking C executable cmTC_6923b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6923b.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes  -rdynamic CMakeFiles/cmTC_6923b.dir/src.c.o -o cmTC_6923b 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-gDRU8w'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcastqual succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-tA7n5V
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bfad8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bfad8.dir/build.make CMakeFiles/cmTC_bfad8.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-tA7n5V'
+Building C object CMakeFiles/cmTC_bfad8.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wcastqual  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2    -Wcast-qual -o CMakeFiles/cmTC_bfad8.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-tA7n5V/src.c
+Linking C executable cmTC_bfad8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfad8.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2  -rdynamic CMakeFiles/cmTC_bfad8.dir/src.c.o -o cmTC_bfad8 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-tA7n5V'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wundef succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-ZF94Bv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f23d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f23d3.dir/build.make CMakeFiles/cmTC_f23d3.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-ZF94Bv'
+Building C object CMakeFiles/cmTC_f23d3.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wundef  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual    -Wundef -o CMakeFiles/cmTC_f23d3.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-ZF94Bv/src.c
+Linking C executable cmTC_f23d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f23d3.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual  -rdynamic CMakeFiles/cmTC_f23d3.dir/src.c.o -o cmTC_f23d3 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-ZF94Bv'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wswitchdefault succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WZlJv7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8909a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8909a.dir/build.make CMakeFiles/cmTC_8909a.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WZlJv7'
+Building C object CMakeFiles/cmTC_8909a.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wswitchdefault  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef    -Wswitch-default -o CMakeFiles/cmTC_8909a.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WZlJv7/src.c
+Linking C executable cmTC_8909a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8909a.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef  -rdynamic CMakeFiles/cmTC_8909a.dir/src.c.o -o cmTC_8909a 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-WZlJv7'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wconversion succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-cAFquV
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1dea9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1dea9.dir/build.make CMakeFiles/cmTC_1dea9.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-cAFquV'
+Building C object CMakeFiles/cmTC_1dea9.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wconversion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default    -Wconversion -o CMakeFiles/cmTC_1dea9.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-cAFquV/src.c
+Linking C executable cmTC_1dea9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dea9.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default  -rdynamic CMakeFiles/cmTC_1dea9.dir/src.c.o -o cmTC_1dea9 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-cAFquV'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wccompat succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EDUKgA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f82cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f82cb.dir/build.make CMakeFiles/cmTC_f82cb.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EDUKgA'
+Building C object CMakeFiles/cmTC_f82cb.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wccompat  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion    -Wc++-compat -o CMakeFiles/cmTC_f82cb.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EDUKgA/src.c
+Linking C executable cmTC_f82cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f82cb.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion  -rdynamic CMakeFiles/cmTC_f82cb.dir/src.c.o -o cmTC_f82cb 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EDUKgA'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_fstackprotectorstrong succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-QGQB0o
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9216/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9216.dir/build.make CMakeFiles/cmTC_d9216.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-QGQB0o'
+Building C object CMakeFiles/cmTC_d9216.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_fstackprotectorstrong  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat    -fstack-protector-strong -o CMakeFiles/cmTC_d9216.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-QGQB0o/src.c
+Linking C executable cmTC_d9216
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9216.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat  -rdynamic CMakeFiles/cmTC_d9216.dir/src.c.o -o cmTC_d9216 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-QGQB0o'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wdoublepromotion succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-mT4xNN
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5135a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5135a.dir/build.make CMakeFiles/cmTC_5135a.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-mT4xNN'
+Building C object CMakeFiles/cmTC_5135a.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wdoublepromotion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wdouble-promotion -o CMakeFiles/cmTC_5135a.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-mT4xNN/src.c
+Linking C executable cmTC_5135a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5135a.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -rdynamic CMakeFiles/cmTC_5135a.dir/src.c.o -o cmTC_5135a 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-mT4xNN'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wparentheses succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-2EBS5p
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9a673/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9a673.dir/build.make CMakeFiles/cmTC_9a673.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-2EBS5p'
+Building C object CMakeFiles/cmTC_9a673.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wparentheses  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion    -Wparentheses -o CMakeFiles/cmTC_9a673.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-2EBS5p/src.c
+Linking C executable cmTC_9a673
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a673.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion  -rdynamic CMakeFiles/cmTC_9a673.dir/src.c.o -o cmTC_9a673 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-2EBS5p'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wformatoverflow succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EbhDl7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f56c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f56c3.dir/build.make CMakeFiles/cmTC_f56c3.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EbhDl7'
+Building C object CMakeFiles/cmTC_f56c3.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wformatoverflow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses    -Wformat-overflow -o CMakeFiles/cmTC_f56c3.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EbhDl7/src.c
+Linking C executable cmTC_f56c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f56c3.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses  -rdynamic CMakeFiles/cmTC_f56c3.dir/src.c.o -o cmTC_f56c3 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-EbhDl7'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wunusedmacros succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LRUL11
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ffb90/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ffb90.dir/build.make CMakeFiles/cmTC_ffb90.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LRUL11'
+Building C object CMakeFiles/cmTC_ffb90.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wunusedmacros  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow    -Wunused-macros -o CMakeFiles/cmTC_ffb90.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LRUL11/src.c
+Linking C executable cmTC_ffb90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffb90.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow  -rdynamic CMakeFiles/cmTC_ffb90.dir/src.c.o -o cmTC_ffb90 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-LRUL11'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wswitchenum succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-IfgNtm
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cec45/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cec45.dir/build.make CMakeFiles/cmTC_cec45.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-IfgNtm'
+Building C object CMakeFiles/cmTC_cec45.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wswitchenum  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wswitch-enum -o CMakeFiles/cmTC_cec45.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-IfgNtm/src.c
+Linking C executable cmTC_cec45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cec45.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros  -rdynamic CMakeFiles/cmTC_cec45.dir/src.c.o -o cmTC_cec45 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-IfgNtm'
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_fvisibilityhidden succeeded with the following output:
+Change Dir: /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-areOE5
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d315/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d315.dir/build.make CMakeFiles/cmTC_7d315.dir/build
+gmake[1]: Entering directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-areOE5'
+Building C object CMakeFiles/cmTC_7d315.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_fvisibilityhidden  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum    -fvisibility=hidden -o CMakeFiles/cmTC_7d315.dir/src.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-areOE5/src.c
+Linking C executable cmTC_7d315
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d315.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum  -rdynamic CMakeFiles/cmTC_7d315.dir/src.c.o -o cmTC_7d315 
+gmake[1]: Leaving directory '/home/lighterror/Documents/InangoTasks/dns_proxy/build/CMakeFiles/CMakeScratch/TryCompile-areOE5'
+
+
+Source file was:
+int main(void) { return 0; }
+

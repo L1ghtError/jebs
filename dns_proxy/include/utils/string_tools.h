@@ -5,7 +5,7 @@
 #include <string.h>
 #include "status.h"
 #include "ctype.h"
-int
+static inline int
 str_i_cmp (const char *s1, const char *s2)
 {
    while (*s1 && *s2) {
@@ -19,5 +19,28 @@ str_i_cmp (const char *s1, const char *s2)
    return (unsigned char) *s1 - (unsigned char) *s2;
 }
 
+static inline char *
+str_i_str (const char *haystack, const char *needle)
+{
+   if (!*needle) {
+      return (char *) haystack;
+   }
+
+   for (; *haystack; haystack++) {
+      const char *h = haystack;
+      const char *n = needle;
+
+      while (*n && (tolower (*h) == tolower (*n))) {
+         h++;
+         n++;
+      }
+
+      if (!*n) {
+         return (char *) haystack;
+      }
+   }
+
+   return NULL;
+}
 
 #endif // _STRING_TOOLS_H_

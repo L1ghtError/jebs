@@ -154,7 +154,10 @@ CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o: /home/lighterror/Documents/Inang
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h
+  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h \
+  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/network_tools.h \
+  /usr/include/arpa/inet.h \
+  /usr/include/ctype.h
 
 CMakeFiles/dns_proxy.dir/src/main.c.o: /home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c \
   /usr/include/stdc-predef.h \
@@ -332,17 +335,30 @@ CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o: /home/lighterror/Documents/I
   /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h \
   /home/lighterror/Documents/InangoTasks/dns_proxy/include/dns/dns-parse.h \
   /home/lighterror/Documents/InangoTasks/dns_proxy/include/dns/dns-protocol.h \
+  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/string_tools.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h \
+  /usr/include/ctype.h \
+  /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/network_tools.h \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/linux/errno.h \

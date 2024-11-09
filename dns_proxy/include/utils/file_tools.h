@@ -6,7 +6,7 @@
 #include <string.h>
 #include "status.h"
 
-size_t
+static inline size_t
 get_filesize (FILE *file)
 {
    if (file == NULL) {
@@ -20,7 +20,7 @@ get_filesize (FILE *file)
 }
 
 
-dns_rc_t
+static inline dns_rc_t
 get_content (FILE *file, size_t filesize, char *content)
 {
    if (file == NULL || content == NULL) {

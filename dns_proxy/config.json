@@ -13,10 +13,23 @@
             "action": "refuse"
         },
         {
+            "host": "example.com",
+            "type": "ALL",
+            "matching": "contains",
+            "action": "refuse"
+        },
+        {
             "host": "google.com",
             "type": "A",
             "matching": "exact",
             "action": "discard"
+        },
+        {
+            "host": "www.openai.com",
+            "type": "ALL",
+            "matching": "exact",
+            "action": "redirect",
+            "redirect_addr" : "216.58.215.110"
         }
     ]
 }

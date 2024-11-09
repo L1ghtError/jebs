@@ -33,7 +33,7 @@ resolve_hostname (const char *hostname)
 int
 main ()
 {
-   const char *hostnames[] = {"www.example.com", "www.google.com", "www.openai.com"};
+   const char *hostnames[] = {"www.example.com", "www.google.com", "www.openai.com","www.youtube.com"};
    size_t num_hostnames = sizeof (hostnames) / sizeof (hostnames[0]);
 
    for (size_t i = 0; i < num_hostnames; i++) {

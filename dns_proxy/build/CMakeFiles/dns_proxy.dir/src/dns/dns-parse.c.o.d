@@ -73,4 +73,6 @@ CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o: \
  /home/lighterror/Documents/InangoTasks/dns_proxy/include/dns/dns-protocol.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h
+ /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/status.h \
+ /home/lighterror/Documents/InangoTasks/dns_proxy/include/utils/network_tools.h \
+ /usr/include/arpa/inet.h /usr/include/ctype.h
