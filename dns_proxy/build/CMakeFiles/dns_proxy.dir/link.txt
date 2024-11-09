@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o "CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o" CMakeFiles/dns_proxy.dir/src/main.c.o CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o -o dns_proxy  dependencies/cJSON/libcjson.a dependencies/cJSON/libcjson_utils.a dependencies/cJSON/libcjson.a -lm 
