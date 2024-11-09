@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+  "command": "/usr/bin/cc  -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include -g -o CMakeFiles/dns_proxy.dir/src/configuration/configuration.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/src/configuration/configuration.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+  "command": "/usr/bin/cc  -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include -g -o CMakeFiles/dns_proxy.dir/src/dns/dns-parse.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/dns/dns-parse.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/src/dns/dns-parse.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+  "command": "/usr/bin/cc  -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include -g -o CMakeFiles/dns_proxy.dir/src/main.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/src/main.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+  "command": "/usr/bin/cc  -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include -g -o CMakeFiles/dns_proxy.dir/src/server/dns_server.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/src/server/dns_server.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+  "command": "/usr/bin/cc  -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON -I/home/lighterror/Documents/InangoTasks/dns_proxy/include -g -o CMakeFiles/test_dump.dir/test/dump.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/test/dump.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/test/dump.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build/dependencies/cJSON",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -g -o CMakeFiles/cjson.dir/cJSON.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON/cJSON.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON/cJSON.c"
+},
+{
+  "directory": "/home/lighterror/Documents/InangoTasks/dns_proxy/build/dependencies/cJSON",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES -I/home/lighterror/Documents/InangoTasks/dns_proxy/build -I/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -g -o CMakeFiles/cjson_utils.dir/cJSON_Utils.c.o -c /home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON/cJSON_Utils.c",
+  "file": "/home/lighterror/Documents/InangoTasks/dns_proxy/dependencies/cJSON/cJSON_Utils.c"
+}
+]

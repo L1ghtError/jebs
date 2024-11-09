@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_dump.dir/test/dump.c.o -o test_dump 

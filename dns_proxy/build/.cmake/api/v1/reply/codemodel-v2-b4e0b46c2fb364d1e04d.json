@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "dependencies/cJSON",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cJSON-Debug-342eb135baa658c182b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "dependencies/cJSON",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4
+					]
+				},
+				{
+					"build" : "dependencies/cJSON/tests",
+					"jsonFile" : "directory-dependencies.cJSON.tests-Debug-c140ad83b822aea00f01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "dependencies/cJSON/tests"
+				},
+				{
+					"build" : "dependencies/cJSON/fuzzing",
+					"jsonFile" : "directory-dependencies.cJSON.fuzzing-Debug-04a69e8655e511d744e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "dependencies/cJSON/fuzzing"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dns_proxy",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "cJSON",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "cjson::@dfe6a094039159edae80",
+					"jsonFile" : "target-cjson-Debug-28656f90310758af0b34.json",
+					"name" : "cjson",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cjson_utils::@dfe6a094039159edae80",
+					"jsonFile" : "target-cjson_utils-Debug-03cba861704d22876a41.json",
+					"name" : "cjson_utils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dns_proxy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dns_proxy-Debug-552afaebf8e9b2b73b62.json",
+					"name" : "dns_proxy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_dump::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_dump-Debug-3600b302c0d03987bc5a.json",
+					"name" : "test_dump",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@dfe6a094039159edae80",
+					"jsonFile" : "target-uninstall-Debug-724bcd0eeadb120cc248.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lighterror/Documents/InangoTasks/dns_proxy/build",
+		"source" : "/home/lighterror/Documents/InangoTasks/dns_proxy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

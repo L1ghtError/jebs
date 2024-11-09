@@ -1,0 +1,192 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"dependencies/cJSON/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 145,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 146,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 163,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 235,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/include/cjson",
+			"paths" : 
+			[
+				"dependencies/cJSON/cJSON.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib/pkgconfig",
+			"paths" : 
+			[
+				"build/dependencies/cJSON/libcjson.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"dependencies/cJSON/libcjson.a"
+			],
+			"targetId" : "cjson::@dfe6a094039159edae80",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib/cmake/cJSON",
+			"exportName" : "cjson",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cjson::@dfe6a094039159edae80",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"dependencies/cJSON/CMakeFiles/Export/59718e3b6383dd843be930c99a44fa1d/cjson.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"dependencies/cJSON/libcjson_utils.a"
+			],
+			"targetId" : "cjson_utils::@dfe6a094039159edae80",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/include/cjson",
+			"paths" : 
+			[
+				"dependencies/cJSON/cJSON_Utils.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib/pkgconfig",
+			"paths" : 
+			[
+				"build/dependencies/cJSON/libcjson_utils.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib/cmake/cJSON",
+			"exportName" : "cjson_utils",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cjson_utils::@dfe6a094039159edae80",
+					"index" : 1
+				}
+			],
+			"paths" : 
+			[
+				"dependencies/cJSON/CMakeFiles/Export/59718e3b6383dd843be930c99a44fa1d/cjson_utils.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib/cmake/cJSON",
+			"paths" : 
+			[
+				"build/dependencies/cJSON/cJSONConfig.cmake",
+				"build/dependencies/cJSON/cJSONConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "dependencies/cJSON",
+		"source" : "dependencies/cJSON"
+	}
+}
