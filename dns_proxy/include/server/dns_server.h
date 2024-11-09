@@ -25,7 +25,7 @@ struct dns_server {
    DNS_SOCK upstream_sockfd;
    uint16_t s_port;
    uint16_t u_port;
-   uint8_t quit;
+   volatile uint8_t quit;
 };
 typedef struct dns_server dns_server_t;
 

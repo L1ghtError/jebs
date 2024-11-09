@@ -222,4 +222,8 @@ destroy_dns_conf (dns_conf_t *dns_conf)
          free (dns_conf->filters[i].redirect_addr);
       }
    }
+   if (dns_conf->filter_size > 0) {
+      free (dns_conf->filters);
+   }
+   free (dns_conf);
 }

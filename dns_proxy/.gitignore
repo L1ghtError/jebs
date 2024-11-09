@@ -22,6 +22,7 @@
 *.bin
 *.param
 
+CMakeFiles
 build
 .vs
 Build

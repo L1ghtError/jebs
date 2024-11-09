@@ -228,6 +228,7 @@ new_dns_h_redirect (const dns_h_t *dht, uint16_t qindex, const uint8_t *redirect
    for (int i = 0; i < (dht_resp->header.qdcount - 1); ++i) {
       ptr_offset += qlengths[i];
    }
+   free (qlengths);
    dht_resp->ancs->name[1] = ptr_offset;
    uint8_t bin_addr[16] = {0};
    int addr_size = 0;
